@@ -1,3 +1,49 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+h1 {
+    font-size: 68px;
+    color: #747474;
+  
+    span.text {
+      padding: 0;
+      padding-right: 4px;
+      border-right: 2px solid #747474;
+      animation: blink 0.75s infinite;
+    }
+  
+    .blue {
+      color: #4480ff;
+    }
+    .green {
+      color: #4caf50;
+    }
+    .yellow {
+      color: #f4b400;
+    }
+    .red {
+      color: #f44336;
+    }
+  }
+  
+  @keyframes blink {
+    from {
+      border: none;
+    }
+    to {
+      border-color: 2px solid #747474;
+    }
+  }
+  
+  @media screen and (max-width: 670px) {
+    h1 {
+      font-size: 40px;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    h1 {
+      font-size: 32px;
+    }
+  }
