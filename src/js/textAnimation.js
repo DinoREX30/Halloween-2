@@ -1,4 +1,4 @@
-const words = ["TERROR", "COSTUMES", "CANDYS", "TRICKS"],
+const words = ["TERROR", "CANDYS", "TRICKS"],
   colors = ["blue", "green", "yellow", "red"],
   text = document.querySelector(".text");
 
@@ -8,7 +8,7 @@ function* generator() {
   while (true) {
     yield index++;
 
-    if (index > 3) {
+    if (index > 2) {
       index = 0;
     }
   }
